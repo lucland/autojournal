@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "395527826360",
+    "project_id": "autojornalapp",
+    "storage_bucket": "autojornalapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395527826360:android:58d713d8c16c5861c37d4d",
+        "android_client_info": {
+          "package_name": "com.autojournal.auto_journal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395527826360-7gu75itmgsaqdu28085358sp5okmvjt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEan9nhBq5ZDvhLA-AUwsdtYdj2Xpj3tA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395527826360-7gu75itmgsaqdu28085358sp5okmvjt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
