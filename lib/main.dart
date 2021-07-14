@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(AutoJornalApp());
+  runApp(
+    AutoJornalApp(),
+  );
 }
 
 class AutoJornalApp extends StatelessWidget {
