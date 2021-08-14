@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final kTextFormFieldDecoration = InputDecoration(
   labelStyle: TextStyle(
     fontFamily: 'Trueno',
-    fontSize: 12.0,
+    fontSize: 13.0,
     color: Colors.grey.withOpacity(0.5),
   ),
   focusedBorder: UnderlineInputBorder(

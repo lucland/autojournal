@@ -17,12 +17,16 @@ class Signup extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormField(
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
                     keyboardType: TextInputType.emailAddress,
                     decoration:
                         kTextFormFieldDecoration.copyWith(labelText: 'EMAIL'),
                   ),
                   TextFormField(
                     obscureText: true,
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
                     decoration: kTextFormFieldDecoration.copyWith(
                         labelText: 'PASSWORD'),
                   ),

@@ -18,11 +18,15 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormField(
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
                     keyboardType: TextInputType.emailAddress,
                     decoration:
                         kTextFormFieldDecoration.copyWith(labelText: 'EMAIL'),
                   ),
                   TextFormField(
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
                     obscureText: true,
                     decoration: kTextFormFieldDecoration.copyWith(
                         labelText: 'PASSWORD'),
