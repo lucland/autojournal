@@ -11,13 +11,14 @@ class DarkCard extends StatelessWidget {
       child: Container(
         height: 50.0,
         child: Material(
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(25.0),
           color: Colors.black,
           elevation: 0,
           child: Center(
             child: Text(
               text,
-              style: TextStyle(color: Colors.white, fontFamily: 'Trueno'),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
         ),

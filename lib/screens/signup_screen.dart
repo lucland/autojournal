@@ -1,10 +1,18 @@
 import 'package:auto_journal/constants.dart';
-import 'package:auto_journal/widgets/dark_card.dart';
+import 'package:auto_journal/widgets/bottom_card.dart';
+import 'package:auto_journal/widgets/top_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Signup extends StatelessWidget {
+class Signup extends StatefulWidget {
+  @override
+  _SignupState createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
+    //final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       body: Center(
@@ -14,7 +22,6 @@ class Signup extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormField(
                     cursorColor: Colors.black,
@@ -22,6 +29,7 @@ class Signup extends StatelessWidget {
                     keyboardType: TextInputType.emailAddress,
                     decoration:
                         kTextFormFieldDecoration.copyWith(labelText: 'EMAIL'),
+                    onChanged: (value) {},
                   ),
                   TextFormField(
                     obscureText: true,
@@ -29,6 +37,15 @@ class Signup extends StatelessWidget {
                     cursorHeight: 23,
                     decoration: kTextFormFieldDecoration.copyWith(
                         labelText: 'PASSWORD'),
+                    onChanged: (value) {},
+                  ),
+                  TextFormField(
+                    obscureText: true,
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
+                    decoration: kTextFormFieldDecoration.copyWith(
+                        labelText: 'CONFIRM PASSWORD'),
+                    onChanged: (value) {},
                   ),
                   SizedBox(
                     height: 20,
@@ -37,6 +54,14 @@ class Signup extends StatelessWidget {
                     text: 'Signup',
                     onTap: () {},
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  BottomCard(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      text: 'Go back'),
                 ],
               ),
             ],
