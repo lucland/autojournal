@@ -1,10 +1,15 @@
 import 'package:auto_journal/constants.dart';
-import 'package:auto_journal/screens/signup_screen.dart';
 import 'package:auto_journal/widgets/bottom_card.dart';
 import 'package:auto_journal/widgets/top_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
+class Signup extends StatefulWidget {
+  @override
+  _SignupState createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     //final size = MediaQuery.of(context).size;
@@ -17,7 +22,6 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormField(
                     cursorColor: Colors.black,
@@ -28,18 +32,26 @@ class LoginScreen extends StatelessWidget {
                     onChanged: (value) {},
                   ),
                   TextFormField(
+                    obscureText: true,
                     cursorColor: Colors.black,
                     cursorHeight: 23,
-                    obscureText: true,
                     decoration: kTextFormFieldDecoration.copyWith(
                         labelText: 'PASSWORD'),
+                    onChanged: (value) {},
+                  ),
+                  TextFormField(
+                    obscureText: true,
+                    cursorColor: Colors.black,
+                    cursorHeight: 23,
+                    decoration: kTextFormFieldDecoration.copyWith(
+                        labelText: 'CONFIRM PASSWORD'),
                     onChanged: (value) {},
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   DarkCard(
-                    text: 'Login',
+                    text: 'Signup',
                     onTap: () {},
                   ),
                   SizedBox(
@@ -47,34 +59,9 @@ class LoginScreen extends StatelessWidget {
                   ),
                   BottomCard(
                       onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => Signup(),
-                          ),
-                        );
+                        Navigator.pop(context);
                       },
-                      text: 'Signup'),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context) => ResetPassword()));
-                    },
-                    child: Container(
-                      child: InkWell(
-                        child: Text(
-                          'Forgot Password',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 11.0,
-                            decoration: TextDecoration.underline,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
+                      text: 'Go back'),
                 ],
               ),
             ],
