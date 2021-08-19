@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+class Constants {
+  static const String EMAILPATTERN =
+      r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^`{|}~]+@[a-zA-Z0-9]+.[a-zA-Z]+";
+}
+
 final kTextFormFieldDecoration = InputDecoration(
   labelStyle: TextStyle(
     fontWeight: FontWeight.w500,
